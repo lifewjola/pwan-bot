@@ -40,6 +40,7 @@ def answer_question(user_question: str):
     1. Keep answer straight to the point
     2. If the context doesn't provide enough information to answer the question, you can gracefully admit you do not know the answer or ask for more information from the user.
     3. If a table in the context contains relevant information, you can use return the table as part of your answer to the question.
+    4. Do not make it obvious that context has been provided to you or give out all the information in the context unless it is necessary to answer the question.
     """
 
     response = model.generate_content(prompt).text
