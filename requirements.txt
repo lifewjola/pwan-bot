@@ -6,3 +6,6 @@ langchain-community
 langchain-qdrant
 qdrant-client
 fastembed
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
