@@ -13,7 +13,7 @@ def extract_table_md(text):
     return None
 
 def main():
-    _, _, logo_col = st.columns([1, 2, 1])
+    _, logo_col, _ = st.columns([1, 2, 1])
     with logo_col:
         st.image("pwan_logoo.png", width=250)
 
