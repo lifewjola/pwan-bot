@@ -2,6 +2,11 @@ import streamlit as st
 from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
+from huggingface_hub import login
+
+hf_token = st.secrets["HF_TOKEN"]
+
+login(token=hf_token)
 
 @st.cache_resource(show_spinner=False)
 def get_vector_store():

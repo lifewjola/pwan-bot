@@ -9,3 +9,5 @@ fastembed
 google-auth
 google-auth-oauthlib
 google-auth-httplib2
+google-genai
+langchain-google-genai

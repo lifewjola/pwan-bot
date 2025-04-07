@@ -45,3 +45,8 @@ def answer_question(user_question: str):
 
     response = model.generate_content(prompt).text
     return response
+
+if __name__ == "__main__":
+    user_question = "What is the mission of PWAN?"
+    answer = answer_question(user_question)
+    print(answer)
