@@ -60,8 +60,9 @@ def main():
         st.session_state.messages.append({"role": "assistant", "content": final_text})
         try:
             append_to_sheet(prompt, final_text)
-        except Exception:
+        except Exception as e:
             st.error("Failed to log the conversation.")
+            st.error(e)
         
 
 if __name__ == "__main__":

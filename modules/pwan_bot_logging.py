@@ -20,7 +20,7 @@ creds = service_account.Credentials.from_service_account_info(creds_info, scopes
 service = build('sheets', 'v4', credentials=creds)
 
 SPREADSHEET_ID = st.secrets["app"]["SPREADSHEET_ID"]
-RANGE_NAME = 'Sheet3!A1'
+RANGE_NAME = 'PWAN!A1:B1'
 
 def append_to_sheet(user_query, bot_response):
     values = [
